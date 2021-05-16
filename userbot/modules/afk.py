@@ -192,8 +192,8 @@ async def mention_afk(mention):
 
         if mention.sender_id not in USERS or chat_title not in USERS:
             if AFKREASON:
-                await mention.reply(f"I'm AFK since {afk_since}.\
-                        \nReason: `{AFKREASON}`")
+                await mention.reply(f"I'm AFK since 1 YEAR.\
+                        \nReason: GOOD NIGHT")
             else:
                 await mention.reply(str(choice(AFKSTR)))
             if mention.sender_id is not None:
