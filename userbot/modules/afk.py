@@ -270,8 +270,8 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)}s`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"I'm AFK since {afk_since}.\
-                        \nReason: `{AFKREASON}`")
+                    await sender.reply(f"I'm AFK since 10 Days.\
+                        \nReason: No Reason")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
